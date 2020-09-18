@@ -1,0 +1,45 @@
+.action-wrapper{
+    display: flex;
+    width: 75px;
+    height: fit-content;
+    align-items: center;
+}
+
+.action-add{
+    background-image: url('../../assets/icons/add2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.action-edit{
+    background-image: url('../../assets/icons/edit.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.action-remove{
+    background-image: url('../../assets/icons/delete.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.group-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}

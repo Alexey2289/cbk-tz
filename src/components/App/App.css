@@ -1,0 +1,5 @@
+.app-wrapper{
+    width: fit-content;
+    margin: 200px auto;
+    display: flex;
+}
