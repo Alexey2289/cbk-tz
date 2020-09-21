@@ -33,18 +33,22 @@ const ModalForm = ({
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      const newNode = {
-        name: text,
-        id: Date.now().toString(),
-        children: [],
-        attribute: `${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}`,
-        parentId: node.id,
-      }
-
-      if (actionType === 'add') {
-        addNewNode(newNode);
+      if (text) {
+        const newNode = {
+            name: text,
+            id: Date.now().toString(),
+            children: [],
+            attribute: `${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}`,
+            parentId: node.id,
+          }
+    
+          if (actionType === 'add') {
+            addNewNode(newNode);
+          } else {
+            editNode(newNode);
+          }
       } else {
-        editNode(newNode);
+        alert('Вы не можете создать ноду с пустым текстом!!! Попробуйте снова...');
       }
       handleClose()
     }
