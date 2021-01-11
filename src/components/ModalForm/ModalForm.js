@@ -50,6 +50,7 @@ const ModalForm = ({
       } else {
         alert('Вы не можете создать ноду с пустым текстом!!! Попробуйте снова...');
       }
+      setText('')
       handleClose()
     }
 
